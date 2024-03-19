@@ -641,6 +641,21 @@ transition: all 0.2s;
 display: inline-block;
 
 }
+#top.hero {
+  position: relative;
+  overflow: hidden;
+}
+#top.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#
+
+
 /* If the orientation of the screen is Portrait */
 /* If the orientation of the screen is Portrait */
 @media only screen and (orientation: Portrait) {
@@ -653,6 +668,22 @@ display: inline-block;
     color: white; /* Set text color to white */
   }
 }
+/* Mobile Styles for Hero Video */
+/* Mobile Styles for Hero Video */
+@media only screen and (max-width: 768px) {
+  /* CSS rules for mobile devices */
+  #top.hero video {
+      display: none; /* Hide the video on mobile */
+  }
+
+  #top.hero {
+      background-image: url("../../assets/img/new/hero-min.gif");
+      background-position: center;
+      background-size: cover;
+  }
+}
+
+
 
 
 .hero-text h1 {
