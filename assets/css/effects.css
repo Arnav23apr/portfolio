@@ -91,7 +91,9 @@ cursor: URL("../../assets/img/cursor/cursor-click.png"),active;
 }
 /* Hero section */
 .hero video{
-min-height: 500px;
+min-height: 320x;
+min-width: 480px;
+height: auto;
 background: url("../../assets/img/hero-min.MP4") center center;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -103,7 +105,9 @@ text-align: center;
 align-items: center;
 filter: blur(2.5px); /* Adjust the blur value as needed */
 z-index: -1; 
+background: none
 }
+
 .hero .down-arrow a{
 color: #fff;
 font-size: 30px;
@@ -114,6 +118,11 @@ animation: pulsate 1.4s ease;
 animation-iteration-count: infinite;
 padding-top: 5px
 }
+#top.hero {
+  /* Other styles */
+  background: none; /* Remove any background color or image */
+}
+
 .hero .down-arrow a:hover {
 color: #fff;
 text-shadow: 2px 2px 4px rgba(128, 49, 0, 0.8);
@@ -629,7 +638,23 @@ border: 3px solid black;
 margin-right: 2.6rem;
 box-shadow: 0 0 0 black;
 transition: all 0.2s;
+display: inline-block;
+
 }
+/* If the orientation of the screen is Portrait */
+/* If the orientation of the screen is Portrait */
+@media only screen and (orientation: Portrait) {
+  .btn {
+    /* Your existing styles */
+    background-color: transparent; /* Make background transparent */
+    border: 1px solid white; /* Add thin white border */
+    border-radius: 3px; /* Add border radius */
+    padding: 5px 10px; /* Add padding */
+    color: white; /* Set text color to white */
+  }
+}
+
+
 .hero-text h1 {
 font-size:2em;
 letter-spacing:0.05em;
