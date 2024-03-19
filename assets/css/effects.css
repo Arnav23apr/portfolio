@@ -22,9 +22,7 @@ font-size: 18px;
 -webkit-font-smoothing: antialiased;
 cursor: URL("../../assets/img/cursor/cursor.png"), auto !important;
 }
-#top.hero video {
-  filter: none; /* Remove any filters applied to the video */
-}
+
 
 body {
 margin: 0;
